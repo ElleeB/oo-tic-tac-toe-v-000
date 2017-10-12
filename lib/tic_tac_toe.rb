@@ -79,7 +79,7 @@ class TicTacToe
       @char = current_player
       move(@index, @char)
       display_board
-    elsif valid_move?(@index) == false 
+    elsif valid_move?(@index) == false
       puts "Please enter a valid number, or the number for an unoccupied space"
       turn(user_input)
     end
