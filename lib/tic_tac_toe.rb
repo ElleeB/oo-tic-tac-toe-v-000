@@ -75,7 +75,8 @@ class TicTacToe
     puts "Please enter 1-9:"
     user_input = gets.strip
     @index = input_to_index(user_input)
-    if valid_move?(@index) == true && position_taken?(@index) == false
+    if valid_move?(@index) == true #&& position_taken?(@index) == false
+      @char = current player
       move(@index, @char)
       display_board
     elsif valid_move?(@index) == false || position_taken?(@index) == true
