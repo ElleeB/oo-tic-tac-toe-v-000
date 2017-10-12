@@ -71,6 +71,14 @@ class TicTacToe
     end
   end
 
+  if won?(board) != nil
+   puts "Congratulations #{winner(board)}!"
+  end
+    if draw?(board) == true
+      puts "Cat's Game!"
+    end
+  end
+
   def turn
     puts "Please enter 1-9:"
     user_input = gets.strip
@@ -84,11 +92,5 @@ class TicTacToe
       turn
     end
   end
-
-  #def move(index, char)
-  #  @index = index
-  #  @char = char
-  #  @board[@index] = @char
-  #end
 
 end
