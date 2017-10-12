@@ -76,12 +76,19 @@ class TicTacToe
     user_input = gets.strip
     @index = input_to_index(user_input)
     if valid_move?(@index) == true #&& position_taken?(@index) == false
-      #move(@index, @char)
+      @char = current_player
+      move(@index, @char)
       display_board
     elsif valid_move?(@index) == false || position_taken?(@index) == true
       puts "Please enter a valid number, or the number for an unoccupied space"
       turn(user_input)
     end
   end
+
+  #def move(index, char)
+  #  @index = index
+  #  @char = char
+  #  @board[@index] = @char
+  #end
 
 end
