@@ -71,7 +71,7 @@ class TicTacToe
     end
   end
 
-  def turn(board)
+  def turn
     puts "Please enter 1-9:"
     user_input = gets.strip
     @index = input_to_index(user_input)
@@ -79,7 +79,7 @@ class TicTacToe
       @char = current_player
       move(@index, @char)
       display_board
-    elsif valid_move?(@index) == false
+    elsif valid_move?(@index) == false 
       puts "Please enter a valid number, or the number for an unoccupied space"
       turn(user_input)
     end
