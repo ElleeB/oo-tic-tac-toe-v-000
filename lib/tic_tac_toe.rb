@@ -137,13 +137,10 @@ class TicTacToe
     if won? != nil
       puts "Congratulations #{winner(@board)}!"
     end
-    
+
     if draw? == true
       puts "Cat's Game!"
     end
   end
   
-end
-
-
 end
