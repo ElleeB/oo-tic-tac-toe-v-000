@@ -85,11 +85,11 @@ class TicTacToe
     end
   end
 
-  def won?(@board)
+  def won?
     WIN_COMBINATIONS.detect do |win_index|
-      position_1 = board[win_index[0]]
-      position_2 = board[win_index[1]]
-      position_3 = board[win_index[2]]
+      position_1 = @board[win_index[0]]
+      position_2 = @board[win_index[1]]
+      position_3 = @board[win_index[2]]
 
       position_1 == "X" && position_2 == "X" && position_3 == "X" ||
       position_1 == "O" && position_2 == "O" && position_3 == "O"
