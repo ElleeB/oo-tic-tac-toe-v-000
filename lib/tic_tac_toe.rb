@@ -100,4 +100,15 @@ class TicTacToe
     @board.all?{|position| position != " "}
   end
 
+  def draw?
+    if won?(@board) != nil ||
+      full?(@board) == false
+      return false
+    else
+      @board.all? do |position|
+        position != "X" || "O"
+      end
+    end
+  end
+
 end
