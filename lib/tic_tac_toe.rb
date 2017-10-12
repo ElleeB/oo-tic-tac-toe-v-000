@@ -101,8 +101,8 @@ class TicTacToe
   end
 
   def draw?
-    if won?(@board) != nil ||
-      full?(@board) == false
+    if won? != nil ||
+      full? == false
       return false
     else
       @board.all? do |position|
