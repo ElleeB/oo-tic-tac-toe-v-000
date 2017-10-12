@@ -135,7 +135,7 @@ class TicTacToe
     end
 
     if won? != nil
-      puts "Congratulations #{winner(@board)}!"
+      puts "Congratulations #{winner}!"
     end
 
     if draw? == true
