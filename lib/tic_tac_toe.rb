@@ -96,4 +96,8 @@ class TicTacToe
     end
   end
 
+  def full?
+    @board.all?{|position| position != " "}
+  end
+
 end
