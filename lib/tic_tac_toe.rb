@@ -119,4 +119,14 @@ class TicTacToe
     end
   end
 
+  def winner
+    if over? == false || draw? == true
+      nil
+    elsif over? == true
+      win_combo = won?
+      char = @board[win_combo[0]]
+      return char
+    end
+  end
+
 end
